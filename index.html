@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <div class="crud">
+        
+
+        <div class="head">
+            <h2>crud</h2>
+            <p>project management system</p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="price">
+                <input onkeyup="gettotal()" type="number" placeholder="price" id="price">
+                <input onkeyup="gettotal()" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="gettotal()" type="number" placeholder="ads" id="ads">
+                <input onkeyup="gettotal()" type="number" placeholder="discount" id="discount">
+                <small id="total"> </small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="sbmit">Create</button>
+        </div>
+
+        <div class="outputs">
+            <div class="SearchBlock">
+                <input type="text" placeholder="Search" id="Search">
+                <div class="searchbtn">
+                    <button id="searchtitle">Search By Title</button>
+                    <button id="searchtitle">Search By Category </button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
